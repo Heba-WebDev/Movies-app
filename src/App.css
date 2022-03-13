@@ -96,3 +96,16 @@ border: 0;
   left: 5%;
   color: gray;
 }
+
+.hero-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  padding-top: 2.5rem;
+}
+
+
+
+.movie-poster {
+  border-radius: 10px;
+}

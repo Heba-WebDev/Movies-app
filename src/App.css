@@ -1,3 +1,8 @@
+/*Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+/*Staatliches*/
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 
 *,
 *::before,
@@ -57,6 +62,7 @@ body {
   padding: 0;
   background-color:var(--dark);
   color: white;
+  font-family: "Open Sans";
 }
 .app {
 max-width: 1280px;
@@ -101,11 +107,54 @@ border: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.5rem;
-  padding-top: 2.5rem;
+  padding-top: 1rem;
 }
 
 
 
 .movie-poster {
   border-radius: 10px;
+}
+
+
+.trending {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  padding-top: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3BAF55;
+  width: 93px;
+  
+}
+
+.main-wrapper {
+  padding-top: 2rem;
+  position: relative;
+  
+}
+
+.main-poster {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.main-details {
+  position: absolute;
+  top: 80%;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.main-title {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding-left: 1rem;
+  text-shadow: 2px 2px 2px #B16E9C;
+}
+@media (min-width: 60rem) {
+  .main-title {
+    font-size: 3rem;
+  }
 }

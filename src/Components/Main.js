@@ -7,7 +7,7 @@ export default function Main(props) {
   <div className="main-details">
       <h1 className="main-title">{props.title}</h1>
   </div>
-  <img src={`https://image.tmdb.org/t/p/w1280/${props.backdrop_path}`} className="main-poster" />
+  <img src={`https://image.tmdb.org/t/p/original/${props.backdrop_path}`} className="main-poster" />
 
   </div>
     )

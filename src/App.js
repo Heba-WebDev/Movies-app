@@ -9,6 +9,7 @@ function App() {
 
   const [trending, SetTrending] = React.useState([]);
   const [mainMovie, setMainMovie] = React.useState([]);
+ 
 
 
   React.useEffect( async () => {
@@ -53,6 +54,7 @@ function App() {
         <Hero 
         key={movie.id}
         id={movie.id}
+        vote_average={movie.vote_average}
         poster_path={movie.poster_path}
          />
         )})}

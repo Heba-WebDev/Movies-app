@@ -108,9 +108,35 @@ border: 0;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.5rem;
   padding-top: 1rem;
+ 
 }
 
+.movie-wrapper {
+  position: relative;
+}
 
+.rating {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  width: 33px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #06B13C;
+}
+
+.bad {
+  background-color: #D34A50;
+}
+
+.good {
+  background-color: #06B13C;
+}
+
+.average {
+  background-color: #E9BD33;
+}
 
 .movie-poster {
   border-radius: 10px;
@@ -123,7 +149,7 @@ border: 0;
   padding-top: 2rem;
   font-weight: 600;
   text-transform: uppercase;
-  border-bottom: 4px solid #3BAF55;
+  border-bottom: 4px solid #E9BD33;
   width: 93px;
   
 }

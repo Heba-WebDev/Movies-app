@@ -6,7 +6,7 @@ export default function Hero(props) {
 return (
   <div className="movie-wrapper" key={props.id}>
 
-  <big className="rating">{props.vote_average}</big>
+  <big className={props.vote_average >= 7 ? "good rating" : "average rating"}>{props.vote_average}</big>
   <img src={`https://image.tmdb.org/t/p/w500/${props.poster_path}`} className="movie-poster" />
 
   </div>
